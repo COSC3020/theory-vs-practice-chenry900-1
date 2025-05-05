@@ -21,9 +21,9 @@ Add your answers to this markdown file.
  if the list is 10x bigger for the elements and you assume that the tree is balanced than the time to get the information would be logn meaning that log(10,000) would take 33% longer
  making the run time 5 x1.33 = 6.66 seconds.
 
-the tree could be unbalanced making the run time O(n) instead of O(logn) a balanced tree being run time of O(logn) while the worst case is the tree is a linked list so if each opperation takes constant time of 1 then it should take 10,000seconds to run O(n) or 2hours and 46 miniuts roughly for worst case, 1 second best case (the element is at the start of the list), average of 1hour 23 minutes. Since each test was only run once the 5 second element mihgt've been one of the first few elements or it was balanced correctly while the other one might've not been balanced and runs at a much longer time. 
-the constants could be extreamly large making it run slow even if the first element is the element in the first search and the element in the 2nd the last one in a tree if it takes 5 seconds to find the frist element in the array and a tree with the depth of 14 to hold the 10,000 elements with the element at the end 5 x 14 = 70 seconds and if you get a mix of the other 2 that could push it over 100 seconds.
-the code might be running on a machine that struggles to handle an array of the larger size or it might have a process running in the background that is slowing down the machine.
+1. The tree could be unbalanced with the element searched for being the first element taking 5 seconds and the element searched for in the second taking 100 seconds.
+2. When the program is run at low imput sizes the program would run efficently but when it gets a large array size it could slow down the machine to a degree that would cause it to run over 100 seconds.
+3. The code might be running on a machine that struggles to handle an array of the larger size or it might have a process running in the background that is slowing down the machine.
  
 
 
