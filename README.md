@@ -14,16 +14,16 @@
 
 Add your answers to this markdown file.
 
-A. the machine that your doing the test on might be limited in cache size so when processing a larger amount of data it would slow down. 
-B. the input size can show different results with n^2 doing better than nlogn if the constant is large enough for example n^2 + 1 will run faster than nlogn + 1,000,000 while n < 1000.
-C. It the code is run on different machines you will likely get different results as the memory limitations might come into play.
+A. the machine that your doing the test on might be limited in cache size so when processing a larger amount of data it would slow down. If the data is larger than what the cache can hold then run time slows down meaning it doesnt conform to the asymptotic prediction.
+B. Since asymptotic ignores constants and lower order terms such as n if thecomplexity is n^2 it can cause the runtime to be worse at small input sizes. The example of O(n^2) with small constants can be faster than  O(nlogn) with large constants even though the asymtotic complexity would ignore the constants in such an equation but at larger input sizes the large constants would have a smaller impact on the run time.
+C. Asymptotic analysis ignores the proccessing power of machines it might run on so if they are run on different machines or have background processes taking some of the processing power then it wouldn't run at the same time an asymptotic complexity would expect.
 
  if the list is 10x bigger for the elements and you assume that the tree is balanced than the time to get the information would be logn meaning that log(10,000) would take 33% longer
  making the run time 5 x1.33 = 6.66 seconds.
 
-1. The tree could be unbalanced with the element searched for being the first element taking 5 seconds and the element searched for in the second taking 100 seconds. If the first element searched took 5 seconds and it takes 5 seconds to search for each element if it needs to go 20 elements deep thats 5 * 20 = 100 seconds.
-2. When the program is run at low imput sizes the program would run efficently but when it gets a large array size it could slow down the machine due to it using all its memory to a degree that would cause it to run over 100 seconds.
-3. The code might be running on a machine that struggles to handle an array of the larger size or it might have a process running in the background that is slowing down the machine.
+1. The tree could be unbalanced with the element searched for being the first element taking 5 seconds and the element searched for in the second taking 100 seconds. If the first element searched took 5 seconds and it takes 5 seconds to search for each element if it needs to go 20 elements deep thats 5 * 20 = 100 seconds. if the tree is unbalanced then it could be longer than 14 deep as it could be up to 10000 deep if its formed like a linked list.
+2. when you have small input sizes the program would likely fit into the cache so it runs at a faster pace. while at larger input sizes it would need to rely on disk space making the program run at a slower speed increasing run time.
+3. If the computer is running background processes it would take up processing power and cache memory so it would leave less for the program to use before it needs to start using disk memory slowing the process down with both processing power and memory.
  
 
 
